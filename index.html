@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaTecnologia</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/Logo.png" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Viva</b>Tecnologia</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe como podemos ajudar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima tecnologia?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+        <div class="carrossel__container">
+            <div class="swiper">
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="img/HTML.png"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/CSS.png"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/javascript.png"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/csharp.png" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/Mysql.png" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/vscode.png" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+
+                <div class="card__descrição">
+  
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+   
+                    <img src="img/Angular.svg" class="descrição__imagem">
+                </div>
+
+                <div class="card__botões">
+ 
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+  
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais acessados</h2>
+
+        <div class="carrossel__container">
+            <div class="swiper">
+             
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                
+                    <div class="swiper-slide"><img src="img/HTML.png"
+                            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="img/CSS.png"
+                            alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="img/javascript.png"
+                            alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="img/csharp.png" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="img/Mysql.png" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="img/vscode.png" alt="livro sobre acessibilidade"></div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+      
+                <div class="card__descrição">
+                  
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Tec. do Mês</h3>
+                        <h2 class="descrição__titulo-livro">Python</h2>
+                        <p class="descrição__texto">Python é uma linguagem de programação de alto nível, de tipagem dinâmica e forte.
+                        </p>
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas" class="estelinhas">
+                    </div>
+                    
+                    <img src="img/python.png" class="py_img" class="descrição__imagem">
+                </div>
+
+                <div class="card__botões">
+
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Android</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">java Script</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Agile</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">C#</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">HTML e CSS</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Python</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">React</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Java</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <h2 class="rodapé__titulo">Grupo Viva Tecnologia</h2>
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Contatos</li>
+            <li class="lista-rodapé__item">
+                <img src="img/Phone.png" alt="Telefone">
+                <a href="#" class="lista-rodapé__link">(11) 4000-4000</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/Whats.png" alt="Whatsapp">
+                <a href="#" class="lista-rodapé__link">(11) 97070-7070</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Redes Sociais</li>
+            <li class="lista-rodapé__item">
+                <img src="img/instagram.png" alt="Instagram VivaTecnologia">
+                <a href="#" class="lista-rodapé__link">Instagram@VivaTecnologia</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/facebook.png" alt="Facebook VivaTecnologia">
+                <a href="#" class="lista-rodapé__link">Facebook@VivaTecnologia</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/youtube.png" alt="Youtube VivaTecnologia">
+                <a href="#" class="lista-rodapé__link">Youtube@VivaTecnologia</a>
+            </li>
+            <li class="lista-rodapé__item">
+                <img src="img/linkedin.png" alt="Linkedin VivaTecnologia">
+                <a href="#" class="lista-rodapé__link">Linkedin@VivaTecnologia</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodapé">
+            <li class="lista-rodapé__titulo">Endereço</li>
+            <li class="lista-rodapé__item">
+                <img src="img/localizacao.png" alt="localização">
+                <a href="#" class="lista-rodapé__link">Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
